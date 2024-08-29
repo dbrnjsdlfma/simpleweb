@@ -1,5 +1,6 @@
 import '../styles/loginPage.css'
 import React , { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 function LoginPage () {
     const [ email , setEmail ] = useState("")
     const [ password , setPassword ] = useState("")
@@ -27,6 +28,10 @@ function LoginPage () {
             }
         })
     }
+    const navigate = useNavigate()
+    const naviRegister = () => {
+        navigate('/register')
+    }
     return (
         <div className="login-wrapper">
             <h2>Login</h2> 
@@ -36,6 +41,7 @@ function LoginPage () {
                 <label>Password</label>
                 <input type="password" name="password" placeholder="password" onChange={e => setPassword(e.target.value)}/>
                 <button type="submit" onClick={loginHandler}>로그인</button>
+                <button type="button" onClick={naviRegister}>회원가입</button>
             </form>
         </div>
     )
