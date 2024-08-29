@@ -2,6 +2,7 @@ import '../styles/loginPage.css'
 import React , { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 function LoginPage () {
+    const navigate = useNavigate()
     const [ email , setEmail ] = useState("")
     const [ password , setPassword ] = useState("")
 
@@ -23,12 +24,13 @@ function LoginPage () {
         .then((res) => {
             if(res.code === 200) {
                 alert(`${res.name}님 방문을 환영합니다`)
+                navigate('/boardList')
             } else {
                 alert(`${res.message}`)
             }
         })
     }
-    const navigate = useNavigate()
+
     const naviRegister = () => {
         navigate('/register')
     }
