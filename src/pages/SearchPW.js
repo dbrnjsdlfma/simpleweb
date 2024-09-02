@@ -29,6 +29,9 @@ function SearchPW() {
                 alert(`${res.message}`)
             }
         })
+        .catch(err => {
+            console.log(err)
+        })
     }
     return (
         <div className="searchPW-wrapper">

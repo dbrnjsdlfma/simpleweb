@@ -1,4 +1,4 @@
-import '../styles/boardWrite.css'
+import '../../styles/boardWrite.css'
 import React, {useState, useEffect} from "react"
 import { useNavigate } from "react-router-dom"
 function BoardWrite() {
@@ -35,6 +35,9 @@ function BoardWrite() {
             } else {
                 alert('등록 실패')
             }
+        })
+        .catch(err => {
+            console.log(err)
         })
     }
     const backToList = () => {

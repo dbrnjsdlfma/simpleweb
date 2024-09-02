@@ -1,4 +1,4 @@
-import '../styles/boardList.css'
+import '../../styles/boardList.css'
 import React , { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Cookies ,useCookies } from 'react-cookie'
@@ -13,6 +13,9 @@ function BoardList() {
         .then(res => res.json())
         .then(res => {
             setBaordList(res.boardData)
+        })
+        .catch(err => {
+            console.log(err)
         })
     }
 
@@ -55,7 +58,7 @@ function BoardList() {
                                 <tr key={board.idx}>
                                     <td>{board.idx}</td>
                                     <td>
-                                        <Link to={`/board/${board.idx}`}>{board.title}</Link>
+                                        <Link className='linkCSS' to={`/board/${board.idx}`}>{board.title}</Link>
                                     </td>
                                     <td>{board.contents}</td>
                                     <td>{board.createdBy}</td>

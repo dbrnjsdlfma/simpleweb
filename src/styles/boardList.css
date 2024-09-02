@@ -49,12 +49,21 @@ table thead {
 table thead td {
     padding: 10px
 }
+table tbody {
+    -webkit-line-clamp: 1;
+}
 table tbody td {
     padding: 10px;
 }
 
-table tbody td:nth-child(3) a {
-    font-weight: 700;
+table tbody td:nth-child(3) {
+    display: inline-block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    text-align: center;
+    white-space:nowrap;
+    width: 300px;
+    
 }
 .write-container {
     display: flex;
@@ -74,4 +83,8 @@ table tbody td:nth-child(3) a {
 }
 .write-container > button:hover {
     background-color: whitesmoke;
+}
+
+.linkCSS {
+    text-decoration: none;
 }

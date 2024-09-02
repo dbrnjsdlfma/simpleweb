@@ -23,3 +23,25 @@
     text-align: center;
     border-right: 1px solid #e6e6e6;
 }
+.container-body {
+    height: 300px;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer > button {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: white;
+}
+footer > button:hover {
+    background-color: whitesmoke;
+}

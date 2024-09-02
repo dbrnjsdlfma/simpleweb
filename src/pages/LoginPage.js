@@ -33,6 +33,9 @@ function LoginPage () {
                 alert(`${res.message}`)
             }
         })
+        .catch(err => {
+            console.log(err)
+        })
     }
 
     const naviRegister = () => {
