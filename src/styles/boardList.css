@@ -1,0 +1,77 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.container h2 {
+    width: 80%;
+    font-size: 2.5rem;
+    margin: 2rem auto;
+    border-bottom: 1px solid;
+    padding: 10px;
+}
+.container h3 {
+    width: 75%;
+    font-weight: 300;
+    margin: 2rem auto;
+}
+.container h3 strong {
+    color: var(--secondary-color);
+}
+.container > .logButton {
+    width: 80px;
+    height: 40px;
+    margin-left: 80%;
+    border : 1px solid;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+}
+.container > .logButton:hover {
+    background-color: whitesmoke;
+}
+table {
+    border-collapse: collapse;
+    width: 80%;
+    border-top: 2px solid #585858;
+    border-bottom: 2px solid #585858;
+    text-align: center;
+    margin: 2rem auto;
+}
+table thead {
+    border: 1px solid black;
+    border-left: 0;
+    border-right: 0;
+    background-color: #f4f5f7;
+    font-size: 1.2rem;
+}
+table thead td {
+    padding: 10px
+}
+table tbody td {
+    padding: 10px;
+}
+
+table tbody td:nth-child(3) a {
+    font-weight: 700;
+}
+.write-container {
+    display: flex;
+    width: 80%;
+    margin-left: 5rem;
+}
+.write-container > button {
+    width: 90px;
+    height: 40px;
+    margin-left: auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: white;
+}
+.write-container > button:hover {
+    background-color: whitesmoke;
+}

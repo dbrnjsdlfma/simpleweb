@@ -1,0 +1,58 @@
+.boardWrite-container {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.boardWrite-container > h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.boardWrite-header , .boardWrite-body, .boardWrite-footer{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.boardWrite-header > input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid;
+    border-color: #222222;
+    border-radius: 5px;
+}
+
+.boardWrite-body > textarea{
+    width: 85%;
+    border: 1px solid;
+    border-color: #222222;
+    border-radius: 5px;
+}
+.boardWrite-body > textarea::placeholder {
+    padding: 10px;
+}
+.boardWrite-footer {
+    margin-top: 50px;
+}
+.boardWrite-footer > button {
+    width: 100px;
+    margin: 0 20px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #222222;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.boardWrite-footer > button:hover {
+    background-color: whitesmoke;
+}

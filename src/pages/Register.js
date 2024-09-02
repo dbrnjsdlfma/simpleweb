@@ -1,3 +1,4 @@
+import '../styles/register.css'
 import React , { useState } from "react"
 import { useNavigate } from 'react-router-dom'
 function Register() {
@@ -41,6 +42,7 @@ function Register() {
                 <label><b>패스워드</b></label><input type="text" name="password" onChange={e => setPassword(e.target.value)}/>
                 <label><b>이름</b></label><input type="text" name="name" onChange={e => setName(e.target.value)}/>
                 <button onClick={handleRegister}>회원 가입</button>
+                <button onClick={moveLoginPage}>취소</button>
             </div>
         </div>
     )
